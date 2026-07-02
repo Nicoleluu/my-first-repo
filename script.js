@@ -1,43 +1,42 @@
-// script.js
+<!DOCTYPE html>
+<html lang="en">
 
-// Wait until the HTML page fully loads
-document.addEventListener('DOMContentLoaded', function() {
+<head>
+  <meta charset="UTF-8">
+  <title>Nicole Lu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    console.log('Personal website loaded');
+<body>
 
-    // Select the button and message display area
-    const button = document.getElementById('demoButton');
-    const messageArea = document.getElementById('messageDisplay');
+<header>
+  <div class="left">Nicole Lu</div>
+  <div class="center">Personal Website</div>
+  <div class="right"><a href="#">About</a></div>
+</header>
 
-    // Add click interaction
-    button.addEventListener('click', function() {
+<main>
 
-        // Personal message
-        const message = `
-Hi, I'm Nicole Lu.
+  <section class="hero">
+    <div class="project-title">Hi,<br>I'm Nicole</div>
+    <div class="project-subtitle">Industrial Designer ✿</div>
+  </section>
 
-I’m an industrial designer studying at RISD, exploring computational design, UX/UI, and interactive systems.
+  <section class="card">
+    <div class="section-title">About Me</div>
+    <p>
+      I graduated from RISD in Industrial Design and am currently studying Computational Design Practices at Columbia GSAPP. My work moves between products, systems, and interactions.
+    </p>
+  </section>
 
-My work focuses on the relationship between behavior, tools, and environments.
+  <section class="card offset">
+    <div class="section-title">Why CDP</div>
+    <p>
+      I joined CDP because I wanted to expand my design practice into the computational field. I became interested in how code and systems shape behavior, environments, and new ways of making.
+    </p>
+  </section>
 
-I’m interested in building systems that are not just functional, but also shape how people think, act, and connect.
+</main>
 
-Currently exploring:
-• Computational Design
-• AI + Design Systems
-• Human-Centered Technology
-• Interactive Environments
-        `;
-
-        // Display the message
-        messageArea.textContent = message;
-
-        // Change button text after click
-        button.textContent = 'Thanks for visiting!';
-
-        // Reset button after 3 seconds
-        setTimeout(function() {
-            button.textContent = 'Learn More About Me';
-        }, 3000);
-    });
-});
+</body>
+</html>
