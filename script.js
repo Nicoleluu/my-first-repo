@@ -1,17 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Website loaded ✿');
+document.addEventListener("DOMContentLoaded", function () {
+    const subtitle = document.querySelector(".subtitle");
 
-    const colors = [
-        '#fff8ef',
-        '#fef6ff',
-        '#f3fff5',
-        '#f0f8ff'
-    ];
+    const originalText = "Industrial Designer";
+    const newText = "RISD → Columbia GSAPP";
 
-    let current = 0;
+    subtitle.addEventListener("mouseenter", function () {
+        subtitle.textContent = newText;
+    });
 
-    setInterval(() => {
-        current = (current + 1) % colors.length;
-        document.body.style.backgroundColor = colors[current];
-    }, 4000);
+    subtitle.addEventListener("mouseleave", function () {
+        subtitle.textContent = originalText;
+    });
 });
