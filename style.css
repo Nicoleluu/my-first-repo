@@ -1,104 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Cormorant+Garamond:wght@400;600&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(
-    135deg,
-    #0f766e,
-    #38bdf8,
-    #fde047
-  );
-  color: #ffffff;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  background: #f7f5ef;
+  color: #1e1e1e;
+  font-family: 'Inter', sans-serif;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 40px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  font-size: 14px;
+  padding: 28px 48px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 header .left {
-  color: rgba(255,255,255,0.7);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #23443c;
 }
 
 header .center {
-  font-weight: 400;
-  text-align: center;
-  color: white;
-}
-
-header .center span {
-  font-size: 12px;
-  color: rgba(255,255,255,0.65);
+  font-size: 14px;
+  color: rgba(0,0,0,0.45);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 header .right a {
-  color: rgba(255,255,255,0.85);
   text-decoration: none;
-  font-weight: 400;
+  color: #23443c;
+  font-size: 14px;
+  transition: opacity 0.2s ease;
 }
 
 header .right a:hover {
-  color: white;
+  opacity: 0.6;
 }
 
 main {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.project-meta {
-  font-size: 14px;
-  color: rgba(255,255,255,0.65);
-  margin-bottom: 8px;
+  max-width: 760px;
+  margin: 120px auto;
+  padding: 0 24px;
 }
 
 .project-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 0.95;
+  margin-bottom: 16px;
+  color: #1e1e1e;
 }
 
 .project-subtitle {
-  font-size: 18px;
-  color: rgba(255,255,255,0.8);
-  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #4b5563;
+  margin-bottom: 80px;
 }
 
 .section-title {
-  font-weight: 700;
+  font-size: 12px;
   text-transform: uppercase;
-  margin-top: 48px;
-  margin-bottom: 14px;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  color: #fde047;
+  letter-spacing: 2px;
+  color: #2f5d50;
+  margin-bottom: 18px;
+  margin-top: 60px;
 }
 
 p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 24px;
-  color: rgba(255,255,255,0.92);
+  font-size: 18px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: #2a2a2a;
+  max-width: 680px;
 }
 
 strong {
-  color: white;
+  font-weight: 500;
+  color: #23443c;
 }
 
 a {
-  color: #a5f3fc;
-  text-decoration: underline;
+  color: #315b7c;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(49,91,124,0.3);
 }
 
 a:hover {
-  color: white;
+  border-bottom: 1px solid rgba(49,91,124,1);
 }
