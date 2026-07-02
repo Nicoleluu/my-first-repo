@@ -5,7 +5,7 @@ body {
   background: linear-gradient(
     135deg,
     #0f766e,
-    #2563eb,
+    #38bdf8,
     #fde047
   );
   color: #ffffff;
@@ -90,4 +90,15 @@ p {
   color: rgba(255,255,255,0.92);
 }
 
-strong
+strong {
+  color: white;
+}
+
+a {
+  color: #a5f3fc;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: white;
+}
